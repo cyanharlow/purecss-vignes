@@ -144,17 +144,25 @@ body {
     position: relative;
     vertical-align: middle;
     height: 153em;
+    z-index: 0;
 
     h1 {
-        font-size: 96em;
+        font-size: 116em;
         z-index: 888;
         margin: 0;
         left: 0;
-        top: 12%;
+        top: 1%;
         width: 94%;
         line-height: 1;
         padding: 0 3%;
-        .vendor(  'text-shadow', ~'1em 1em 0 @textshadowcolor, 2em 2em 0 @textshadowcolor, 3em 3em 0 @textshadowcolor, 4em 4em 0 @textshadowcolor, 5em 5em 0 @textshadowcolor, 6em 6em 0 @textshadowcolor, 3em 3em 0 @textshadowcolor, 4em 4em 0 @textshadowcolor, 5em 5em 0 @textshadowcolor, 6em 6em 0 @textshadowcolor, 7em 7em 0 @textshadowcolor, 8em 8em 0 @textshadowcolor, 9em 9em 0 @textshadowcolor, 10em 10em 0 @textshadowcolor');
+
+        i.AZ {
+            margin-left: 0.06em;
+            &._86 {
+                font-size: 150%;
+                vertical-align: top;
+            }
+        }
     }
 
     h1.shadows {
