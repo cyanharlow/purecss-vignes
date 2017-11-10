@@ -925,27 +925,28 @@ body {
 .plum {
     left: 67%;
     top: 29%;
+    width: 23%;
+    height: 20%;
+    .vendor(border-radius, 50%);
+    .vendor(transform, ~ 'rotate(40deg)');
 
     .fruit {
-        height: 170em;
-        width: 150em;
+        height: 100%;
+        width: 100%;
         background-color: #821A41;
         .vendor(box-shadow, ~ 'inset 10em 0em 11em 0em #D875A9');
-        .vendor(border-radius, 86% 70%);
-        .vendor(transform, ~ 'rotate(40deg)');
-        top: 0;
-        left: 0;
+        .vendor(border-radius, inherit);
+
     }
 
     .shine {
-        height: 154em;
-        width: 151em;
+        height: 100%;
+        width: 100%;
         background-color: #B34775;
         .vendor(box-shadow, ~ 'inset -22em -7em 45em 1em #3E0121, inset 16em -7em 15em 1em #D875A9, inset -13em -34em 13em 62em #842651');
-        .vendor(border-radius, 86% 70%);
-        left: 25em;
-        top: 14em;
-        .vendor(transform, ~ 'rotate(40deg)');
+        .vendor(border-radius, inherit);
+        left: 17%;
+        top: -2%;
     }
 }
 
