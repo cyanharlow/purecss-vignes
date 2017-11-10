@@ -239,8 +239,8 @@ body {
 .aleaf {
     background-color: #357E35;
     .vendor(box-shadow, ~ '7em 10em 8em 2em rgba(0, 0, 0, 0.3)');
-    height: 180em;
-    width: 190em;
+    height: 26%;
+    width: 34%;
     .vendor(border-radius, 90% 2%);
     overflow: hidden;
 
@@ -264,7 +264,7 @@ body {
 
     &:after {
         .pseudoclear;
-        height: 2em;
+        height: 1.5%;
         width: 160%;
         background-color: #419141;
         .vendor(transform, ~ 'rotate(-44deg)');
@@ -279,10 +279,10 @@ body {
         display: block;
         height: 100%;
         width: 100%;
-        border-bottom: 2em solid #60AF60;
-        border-left: 2em solid #60AF60;
+        border-bottom: 2em solid #3a7d3a;
+        border-left: 2em solid #449244;
         .vendor(border-radius, 90% 9% 90% 4%);
-        .vendor(box-shadow, ~ '-13em 15em 22em -13em #134713, inset 13em -15em 20em -9em #469546');
+        .vendor(box-shadow, ~ '-13em 15em 22em -13em #134713, inset 13em -15em 20em -9em #186718');
 
         &.vein1 {
             left: 19%;
@@ -789,39 +789,41 @@ body {
 
 .apple {
     left: 6%;
-    top: 39%;
+    top: 33%;
+    width: 38%;
+    height: 34%;
+    .vendor(transform, ~ 'rotate(40deg)');
+    .vendor(border-radius, 63% 42% 40%);
 
     .fruit {
-        height: 263em;
-        width: 247em;
+        height: 100%;
+        width: 100%;
         background-color: #FF9598;
         .vendor(box-shadow, ~ 'inset 0 -35em 128em 37em #920707, inset -30em -44em 69em 105em #FC0000, 18em 2em 18em 6em rgba(0, 0, 0, 0.27)');
-        .vendor(border-radius, 63% 42% 40%);
-        left: 20%;
-        top: 20%;
-        .vendor(transform, ~ 'rotate(40deg)');
+        .vendor(border-radius, inherit);
+
+        .pit {
+            width: 32%;
+            height: 21%;
+            background-color: #DA1414;
+            left: 5%;
+            top: 28%;
+            .vendor(border-radius, 4em 48em 3em 49em);
+            .vendor(box-shadow, ~ '5em -9em 13em 1em #A60000, inset -9em 9em 20em 4em #A60000, -6em -1em 7em 2em #C93C3C, inset 9em -9em 21em 16em #C93C3C');
+            .vendor(transform, ~ 'rotate(106deg)');
+        }
+
     }
 
     .leaf {
         background-color: #4B7B45;
-        height: 50em;
-        width: 54em;
-        .vendor(border-radius, 189em 2em);
-        left: 5em;
-        top: -10em;
+        height: 12%;
+        width: 22%;
+        .vendor(border-radius, 90% 2%);
+        left: 8%;
+        top: 31%;
         .vendor(transform, ~ 'rotate(57deg)');
         .vendor(box-shadow, ~ 'inset -5em -20em 10em 0 #376636');
-    }
-
-    .pit {
-        width: 82em;
-        height: 57em;
-        background-color: #DA1414;
-        left: 10em;
-        top: 80em;
-        .vendor(border-radius, 4em 48em 3em 49em);
-        .vendor(box-shadow, ~ '5em -9em 13em 1em #A60000, inset -9em 9em 20em 4em #A60000, -6em -1em 7em 2em #C93C3C, inset 9em -9em 21em 16em #C93C3C');
-        .vendor(transform, ~ 'rotate(106deg)');
     }
 
     .stem {
@@ -830,8 +832,8 @@ body {
         border-top: 76em solid #3D2E1F;
         height: 10em;
         .vendor(transform, ~ 'rotate(-28deg)');
-        left: 80em;
-        top: 13em;
+        left: 18%;
+        top: 18%;
         z-index: 999;
     }
 
@@ -897,27 +899,27 @@ body {
 .peach {
     left: 19%;
     top: 50%;
+    width: 33%;
+    height: 33%;
+    .vendor(border-radius, 50%);
+    .vendor(transform, ~ 'rotate(40deg)');
 
     .fruit {
-        height: 235em;
-        width: 240em;
+        height: 100%;
+        width: 100%;
         background-color: #D63800;
-        .vendor(box-shadow, ~ 'inset -64em 13em 52em 11em #9D1E08, inset 18em 4em 27em -4em #EBA04F, inset 0 0 49em 22em #BB3934');
-        .vendor(border-radius, 86% 70%);
-        .vendor(transform, ~ 'rotate(40deg)');
-        top: 0;
-        left: 0;
+        .vendor(box-shadow, ~ 'inset -64em 13em 52em 11em #9D1E08, inset 18em 4em 27em -4em #EBA04F, inset 0 0 49em 22em #BB3934, 0 0 6em 1em #ec9e59');
+        .vendor(border-radius, inherit);
     }
 
     .shine {
-        height: 235em;
-        width: 240em;
+        height: 100%;
+        width: 100%;
+        left: 17%;
+        top: -2%;
         background-color: #FFBF5A;
         .vendor(box-shadow, ~ 'inset -60em 13em 52em -16em #9D1E08, inset 10em 17em 43em -4em #F9AC6B, inset 0 0 128em 61em #C63A34, 0 0 8em 2em #ea8a5a');
-        .vendor(border-radius, 86% 70%);
-        left: 27em;
-        top: 17em;
-        .vendor(transform, ~ 'rotate(40deg)');
+        .vendor(border-radius, inherit);
     }
 }
 
