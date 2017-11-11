@@ -749,7 +749,7 @@ body {
 
     .inner {
         background: #f7972b;
-        background: radial-gradient(#ffe3b6, #fda435 18%, #f38220 60%, #ffe3b6 63%, #f79600 73%);
+        background: radial-gradient(#ffe3b6, #fda435 18%, #f38220 60%, #ffe3b6 73%, #f79600 76%);
         width: 100%;
         width: 100%;
         height: 30%;
@@ -758,37 +758,48 @@ body {
         .vendor(box-shadow, ~ 'inset -4em 2em 4em -2em #f99b00, inset 4em 3em 4em -2em #f99b00, inset -8em 0 2em 4em #ffdba2, inset 8em 0 2em 4em #ffdba2, inset 0 0 7em 14em #ef7f22, 0 6em 4em -2em #fed498');
 
         .line {
-            height: 100%;
+            height: 84%;
             left: 50%;
             top: 0;
             bottom: 0;
             margin: auto;
             .vendor(transform-origin, 0 50%);
-            .vendor(box-shadow, ~ '0 0 4em 1em rgba(255, 219, 162, 0.69), inset 3em 3em 4em -2em #ffdba2');
+            .vendor(box-shadow, ~ '0 0 4em 1em rgba(255, 219, 162, 0.69)');
 
+            &:after, &:before {
+                .pseudoclear;
+                .vendor(box-shadow, ~ '0 0 4em 3em rgba(255, 219, 162, 0.69)');
+
+            }
+            &:before {
+                top: 0;
+            }
+            &:after {
+                bottom: 0;
+            }
+
+            &.line1 {
+                .vendor(transform, rotateZ(5deg));
+            }
             &.line2 {
-                .vendor(transform, rotateZ(-65deg));
-                height: 198%;
+                .vendor(transform, rotateZ(-63deg));
+                height: 174%;
             }
-
             &.line3 {
-                .vendor(transform, rotateZ(68deg));
-                height: 198%;
+                .vendor(transform, rotateZ(73deg));
+                height: 235%;
             }
-
             &.line4 {
-                .vendor(transform, rotateZ(100deg));
-                height: 322%;
+                .vendor(transform, rotateZ(99deg));
+                height: 323%;
             }
-
             &.line5 {
-                .vendor(transform, rotateZ(-100deg));
-                height: 322%;
+                .vendor(transform, rotateZ(-93deg));
+                height: 376%;
             }
-
             &.line6 {
-                .vendor(transform, rotateZ(40deg));
-                height: 120%;
+                .vendor(transform, rotateZ(45deg));
+                height: 115%;
             }
         }
     }
