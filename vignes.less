@@ -251,6 +251,18 @@ body {
     .vendor(border-radius, 90% 2%);
     overflow: hidden;
 
+    &:after {
+        .pseudoclear;
+        height: 1.5%;
+        height: 241.5%;
+        width: 43%;
+        left: -58%;
+        bottom: 4%;
+        .vendor(transform, ~  'rotate(47deg)');
+        .vendor(transform-origin, ~  '0 100%');
+        .vendor(border-radius, 50%);
+        .vendor(box-shadow, ~  '0 0 53em 14em rgba(1, 30, 1, 0.61), inset 0 0 53em 14em rgba(101, 175, 101, 0.58), 0 0 2em 2em rgba(228, 241, 228, 0.46), inset 0 0 2em 2em rgba(227, 241, 227, 0.36)');
+    }
     &.leaf1 {
         left: 61%;
         top: 13%;
@@ -291,19 +303,6 @@ body {
         width: 27%;
         background-color: #7eae5d;
         .vendor(transform, ~  'rotate(-46deg)');
-    }
-
-    &:after {
-        .pseudoclear;
-        height: 1.5%;
-        height: 241.5%;
-        width: 43%;
-        left: -58%;
-        bottom: 4%;
-        .vendor(transform, ~  'rotate(47deg)');
-        .vendor(transform-origin, ~  '0 100%');
-        .vendor(border-radius, 50%);
-        .vendor(box-shadow, ~  '0 0 53em 14em rgba(1, 30, 1, 0.61), inset 0 0 53em 14em rgba(2, 38, 2, 0.58), 0 0 2em 2em rgba(228, 241, 228, 0.46), inset 0 0 2em 2em rgba(227, 241, 227, 0.36)');
     }
 
     .vein {
