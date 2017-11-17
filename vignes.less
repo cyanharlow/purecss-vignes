@@ -411,15 +411,15 @@ body {
 
 .orange {
     width: 40%;
-    height: 25%;
+    height: 32%;
     left: 26%;
-    top: 24%;
+    top: 16%;
     .vendor(transform, rotateZ(-23deg));
 
     .rind {
         background: #ffc14d;
         .vendor(box-shadow, ~  'inset 4em -5em 22em -1em #9f2d03, inset 22em -20em 57em 6em #bf4603, inset 0 -47em 48em 46em orange');
-        height: 83%;
+        height: 58%;
         width: 100%;
         bottom: 0;
         .vendor(border-radius, ~  '0 0 50% 50% / 0 0 90% 90%');
@@ -781,40 +781,43 @@ body {
     }
 
     .inner {
-        background: #f7972b;
-        background: radial-gradient(#ffe3b6 5%, #fda435 13%, #f38220 60%, #ffe3b6 73%, #f79600 76%);
-        width: 100%;
-        width: 100%;
-        height: 30%;
-        .vendor(border-radius, 80%);
-        top: 0;
-        .vendor(box-shadow, ~  'inset -4em 2em 4em -2em #f99b00, inset 4em 3em 4em -2em #f99b00, inset -8em 0 2em 6em #f9cb83, inset 8em 0 2em 6em #f9cb83, inset 0 0 7em 14em #ffa75f, 0 6em 4em -2em #f9cb83');
+        background-color: #f9c87c;
+        .vendor(transform, perspective(600em) rotateX(-70deg));
+        overflow: hidden;
+        width: 99%;
+        height: 100%;
+        .vendor(border-radius, 50%);
+        top: -6%;
 
         &:after {
             .pseudoclear;
-            width: 90%;
-            height: 90%;
+            width: 100%;
+            height: 100%;
             left: 0;
             right: 0;
             margin: auto;
-            border-bottom: 5em solid #fde9c9;
+            z-index: 9999;
+            // background: radial-gradient(transparent 60%, #ffe3b6 73%, #f79600 76%);
             .vendor(border-radius, inherit);
-            .vendor(filter, blur(3em));
+            .vendor(box-shadow, ~  'inset -4em 2em 4em -2em #f99b00, inset 4em 3em 4em -2em #f99b00, inset -9em 7em 9em 6em #f9cb83, inset 10em -11em 21em 6em #f9cb83');
         }
 
         .line {
-            height: 76%;
+            width: 20%;
+            height: 46%;
+            margin-left: -10%;
             left: 50%;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            .vendor(transform-origin, 0 50%);
-            .vendor(box-shadow, ~  '0 0 1em 1em rgba(253, 187, 118, 0.5)');
+            top: 4%;
+            z-index: 2;
+            background: #f9ac46;
+            .vendor(border-radius, ~'50% 50% 50% 50% / 10% 10% 90% 90%');
+            .vendor(transform-origin, 50% 100%);
+            .vendor(box-shadow, ~'inset 0 -32em 7em -11em #fbd8a0, inset 0 -23em 2em 3em rgba(253, 187, 118, 0.88), 0 0 2em 3em rgba(253, 187, 118, 0.88), inset 0 12em 29em 4em #f97802');
 
             &:after,
             &:before {
                 .pseudoclear;
-                .vendor(box-shadow, ~  '0 0 4em 3em #fdd38f');
+                //.vendor(box-shadow, ~  '0 0 4em 3em #fdd38f');
             }
 
             &:before {
@@ -825,33 +828,52 @@ body {
                 bottom: 0;
             }
 
-            &.line1 {
-                .vendor(transform, rotateZ(-5deg));
+            &:nth-of-type(1) {
+                z-index: 0;
+            }
+            &:nth-of-type(2) {
+                transform: rotate(27deg);
             }
 
-            &.line2 {
-                .vendor(transform, rotateZ(-63deg));
-                height: 164%;
+            &:nth-of-type(3) {
+                transform: rotate(55deg);
             }
 
-            &.line3 {
-                .vendor(transform, rotateZ(73deg));
-                height: 224%;
+            &:nth-of-type(4) {
+                transform: rotate(90deg);
             }
 
-            &.line4 {
-                .vendor(transform, rotateZ(99deg));
-                height: 312%;
+            &:nth-of-type(5) {
+                transform: rotate(120deg);
             }
 
-            &.line5 {
-                .vendor(transform, rotateZ(-93deg));
-                height: 368%;
+            &:nth-of-type(6) {
+                transform: rotate(150deg);
             }
 
-            &.line6 {
-                .vendor(transform, rotateZ(45deg));
-                height: 112%;
+            &:nth-of-type(7) {
+                transform: rotate(180deg);
+            }
+
+            &:nth-of-type(8) {
+                transform: rotate(210deg);
+            }
+
+            &:nth-of-type(9) {
+                transform: rotate(240deg);
+            }
+
+            &:nth-of-type(10) {
+                transform: rotate(270deg);
+            }
+
+            &:nth-of-type(11) {
+                transform: rotate(300deg);
+            }
+
+            &:nth-of-type(12) {
+                transform: rotate(330deg);
+                z-index: 1;
             }
         }
     }
