@@ -265,8 +265,9 @@ body {
     }
     &.leaf1 {
         left: 61%;
-        top: 13%;
-        .vendor(transform, ~  'rotate(-20deg)');
+        top: 18%;
+        .vendor(transform, ~  'rotate(75deg) scaleX(-1)');
+        .vendor(box-shadow, ~'-26em -5em 8em 2em rgba(0, 0, 0, 0.3)');
     }
 
     &.leaf2 {
@@ -297,12 +298,13 @@ body {
     }
 
     &.leaf5 {
-        left: 52%;
-        top: 24%;
+        left: 31%;
+        top: 18%;
         height: 21%;
         width: 27%;
         background-color: #7eae5d;
-        .vendor(transform, ~  'rotate(-46deg)');
+        .vendor(transform, ~  'rotate(48deg) scaleX(-1)');
+        .vendor(box-shadow, ~'-26em -5em 8em 2em rgba(0, 0, 0, 0.3)');
     }
 
     .vein {
@@ -846,10 +848,12 @@ body {
 
             &:nth-of-type(5) {
                 transform: rotate(120deg);
+                z-index: 5;
             }
 
             &:nth-of-type(6) {
                 transform: rotate(150deg);
+                z-index: 3;
             }
 
             &:nth-of-type(7) {
@@ -1254,8 +1258,8 @@ body {
         left: 0;
         top: 0;
         background-color: #D83131;
-        .vendor(border-radius, ~  '122em 129em 154em 148em / 90em 85em 243em 245em');
-        .vendor(box-shadow, ~  'inset 0 -23em 25em -3em #750000, inset 0 0 16em 3em #690303, inset 30em 7em 34em 17em #800, inset 53em -19em 71em 3em #A40101, inset 79em 81em 20em -34em #FFDADA');
+        .vendor(border-radius, ~  '50% 50% 50% 50% / 24% 25% 62% 73%');
+        .vendor(box-shadow, ~  'inset 0 -23em 25em -3em #750000, inset 0 0 16em 3em #690303, inset 10em -27em 34em 7em #800, inset 53em -19em 71em 3em #A40101, inset 57em 71em 13em -34em #FFDADA');
     }
 
     .seed {
