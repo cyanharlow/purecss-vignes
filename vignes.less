@@ -359,15 +359,23 @@ body {
     }
 
     .grape {
-        background-color: #f5dfff;
-        .vendor(box-shadow, ~  'inset 18em 16em 16em -11em #B897D4, inset -4em -13em 28em 7em #44154A, inset 7em 8em 8em 7em #754B9B, inset -7em -15em 10em 29em #7c2f76, 10em 9em 11em -6em rgba(29, 4, 4, 0.64)');
+        background-color: #762c71;
+        .vendor(box-shadow, ~  'inset 18em 16em 16em -11em #B897D4, inset -4em -13em 28em 7em rgba(49, 5, 54, 0.7), inset 7em 8em 8em 7em rgba(79, 35, 118, 0.3), 10em 9em 11em -6em rgba(29, 4, 4, 0.64)');
         height: 77em;
         width: 66em;
         .vendor(border-radius, 50%);
 
+        &:after {
+            .pseudoclear;
+            top: 32%;
+            left: 37%;
+            height: 5%;
+            .vendor(box-shadow, ~'0 0 10em 4em #f5dfff');
+        }
         &.grape1 {
             top: -2em;
             right: -31em;
+            background: #5a326e;
         }
 
         &.grape2 {
@@ -383,6 +391,7 @@ body {
         &.grape4 {
             top: -50em;
             left: -34em;
+            background: #a9488b;
             transform: rotate(-14deg);
         }
 
@@ -394,6 +403,7 @@ body {
         &.grape6 {
             top: -88em;
             left: 80em;
+            background: #623670;
             transform: rotate(-6deg);
         }
 
