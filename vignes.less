@@ -243,6 +243,75 @@ body {
     position: relative;
 }
 
+.orange-blossom {
+    .flower {
+        width: 100%;
+        height: 100%;
+    }
+    .stem {
+        height: 160%;
+        width: 49%;
+        .vendor(border-radius, 100%);
+        .vendor(box-shadow, ~ 'inset -3em 2em 3em -1em #1e2e0b, inset -9em 1em 1em -3em #5c8438, 8em 2em 3em -4em #0e190169');
+        top: 50%;
+        left: 23%;
+    }
+    .petal {
+        width: 20%;
+        height: 46%;
+        margin-left: -10%;
+        left: 50%;
+        top: 4%;
+        background-color: white;
+        background-image: radial-gradient(ellipse at center 70%, transparent, #bea7a7);
+        .vendor(border-radius, ~'50% 50% 50% 50% / 40% 22% 49% 76%');
+        .vendor(transform-origin, 50% 100%);
+        .vendor(box-shadow, ~'0 0 2em 1em #a99885, 0em -5em 3em 2em rgba(11, 30, 2, 0.15)');
+        &:nth-of-type(1) {
+
+        }
+        &:nth-of-type(2) {
+            transform: rotate(53deg);
+        }
+        &:nth-of-type(3) {
+            transform: rotate(135deg);
+        }
+        &:nth-of-type(4) {
+            transform: rotate(-137deg);
+        }
+        &:nth-of-type(5) {
+            transform: rotate(-53deg);
+        }
+    }
+    .stamen {
+        width: 18%;
+        height: 17%;
+        background: #dfb525;
+        .vendor(border-radius, ~'50%');
+        left: 43%;
+        top: 40%;
+        .flower {
+            .vendor(box-shadow, ~'inset 0 0 9em 2em #b28e0d');
+        }
+    }
+    &.blossom1 {
+        width: 6%;
+        height: 5%;
+        right: 20%;
+        top: 20%;
+        .flower {
+            .vendor(transform, ~'perspective(47em) rotateX(56deg)');
+        }
+    }
+    &.blossom2 {
+        width: 5%;
+        height: 4%;
+        right: 30%;
+        top: 24%;
+        .vendor(transform, ~'perspective(110em) rotateX(26deg) rotateZ(24deg)');
+    }
+}
+
 .aleaf {
     background-color: #357E35;
     .vendor(box-shadow, ~  '7em 10em 8em 2em rgba(0, 0, 0, 0.3)');
@@ -262,6 +331,15 @@ body {
         .vendor(transform-origin, ~  '0 100%');
         .vendor(border-radius, 50%);
         .vendor(box-shadow, ~  '0 0 53em 14em rgba(1, 30, 1, 0.61), inset 0 0 53em 14em rgba(101, 175, 101, 0.58), 0 0 2em 2em rgba(228, 241, 228, 0.46), inset 0 0 2em 2em rgba(227, 241, 227, 0.36)');
+    }
+    &.leaf0 {
+        left: 58%;
+        top: 23%;
+        width: 23%;
+        height: 18%;
+        background-color: #7eae5d;
+        .vendor(transform, ~  'rotate(55deg) scaleX(-1)');
+        .vendor(box-shadow, ~'-26em -5em 8em 2em rgba(0, 0, 0, 0.3)');
     }
     &.leaf1 {
         left: 61%;
@@ -302,8 +380,25 @@ body {
         top: 18%;
         height: 21%;
         width: 27%;
-        background-color: #7eae5d;
         .vendor(transform, ~  'rotate(48deg) scaleX(-1)');
+        .vendor(box-shadow, ~'-26em -5em 8em 2em rgba(0, 0, 0, 0.3)');
+    }
+    &.leaf6 {
+        left: 8%;
+        top: 62%;
+        height: 9%;
+        width: 12%;
+        background-color: #7eae5d;
+        .vendor(transform, ~  'rotate(-28deg) scaleX(-1)');
+        .vendor(box-shadow, ~'-26em -5em 8em 2em rgba(0, 0, 0, 0.3)');
+    }
+    &.leaf7 {
+        left: 13%;
+        top: 23%;
+        height: 21%;
+        width: 27%;
+        background-color: #7eae5d;
+        .vendor(transform, ~  'rotate(-9deg) scaleX(-1)');
         .vendor(box-shadow, ~'-26em -5em 8em 2em rgba(0, 0, 0, 0.3)');
     }
 
@@ -361,8 +456,8 @@ body {
     .grape {
         background-color: #762c71;
         .vendor(box-shadow, ~  'inset 18em 16em 16em -11em #B897D4, inset -4em -13em 28em 7em rgba(49, 5, 54, 0.7), inset 7em 8em 8em 7em rgba(79, 35, 118, 0.3), 10em 9em 11em -6em rgba(29, 4, 4, 0.64)');
-        height: 77em;
-        width: 66em;
+        height: 68em;
+        width: 59em;
         .vendor(border-radius, 50%);
 
         &:after {
@@ -374,7 +469,7 @@ body {
         }
         &.grape1 {
             top: -2em;
-            right: -31em;
+            right: -19em;
             background: #5a326e;
         }
 
@@ -386,17 +481,18 @@ body {
         &.grape3 {
             top: -136em;
             left: 64em;
+            background: #661d50;
         }
 
         &.grape4 {
-            top: -50em;
-            left: -34em;
+            top: -25em;
+            left: -4em;
             background: #a9488b;
             transform: rotate(-14deg);
         }
 
         &.grape5 {
-            top: -120em;
+            top: -110em;
             left: 21em;
         }
 
@@ -414,9 +510,51 @@ body {
         }
 
         &.grape8 {
-            top: -13em;
+            top: 23em;
             left: 10em;
             transform: rotate(16deg);
+        }
+        &.grape9 {
+            left: 14em;
+            transform: rotate(30deg);
+            top: -148em;
+            background: #8d5080;
+        }
+        &.grape10 {
+            left: -32em;
+            top: -111em;
+        }
+        &.grape11{
+            left: 61em;
+            top: -170em;
+            transform: rotate(4deg);
+            height: 50em;
+        }
+        &.grape12 {
+            left: -63em;
+            top: -50em;
+            transform: rotate(-19deg);
+        }
+        &.grape13 {
+            left: 89em;
+            top: -48em;
+            background: #3a1447;
+            transform: rotate(16deg);
+        }
+        &.grape14 {
+            left: 55em;
+            top: -9em;
+            transform: rotate(16deg);
+        }
+        &.grape15 {
+            top: -142em;
+            left: 96em;
+            height: 60em;
+        }
+        &.grape16 {
+            top: -97em;
+            left: 103em;
+            height: 60em;
         }
     }
 }
@@ -1025,8 +1163,8 @@ body {
     .fruit {
         height: 100%;
         width: 100%;
-        background-color: #D63800;
-        .vendor(box-shadow, ~  'inset -64em 13em 52em 11em #9D1E08, inset 10em 4em 27em -4em #fcd3a7, inset 0 0 49em 22em #BB3934, -7em 1em 7em -3em #fac18f, 30em 4em 9em 7em rgba(21, 8, 1, 0.47)');
+        background-color: #d36f50;
+        .vendor(box-shadow, ~  'inset -64em 13em 52em 11em #b8351f, inset 9em 4em 27em -4em #fcb670, inset 0 0 49em -4em #eb8f4d, -7em 1em 7em -3em #fac18f, 30em 4em 9em 7em rgba(21, 8, 1, 0.47)');
         .vendor(border-radius, inherit);
     }
 
@@ -1036,7 +1174,7 @@ body {
         left: 17%;
         top: -2%;
         background-color: #FFBF5A;
-        .vendor(box-shadow, ~  'inset -60em 13em 52em -16em #9D1E08, inset 10em 17em 43em -4em #F9AC6B, inset 0 0 128em 61em #C63A34, -4em 0 8em 0em #ea8a5a, 4em 0 8em 0em #9e1e08');
+        .vendor(box-shadow, ~  'inset -60em 13em 60em -25em #9D1E08, inset 10em 17em 43em -4em #F9AC6B, inset -30em 0 128em 41em #C63A34, -4em 0 8em 0em #ea8a5a, 4em 0 8em 0em #9e1e08');
         .vendor(border-radius, inherit);
     }
 }
