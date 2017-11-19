@@ -445,9 +445,33 @@ body {
 }
 
 .grapes {
-    left: 44%;
+    left: 42%;
     top: 58%;
+    .grapestem {
+        background-color: #955858;
+        border-radius: 2em;
+        height: 70em;
+        background-image: linear-gradient(to right, transparent, #4f2714);
 
+        &.stem1 {
+            top: -194em;
+            left: 113em;
+            width: 17em;
+            transform: perspective(44em) rotateX(-63deg) rotateY(30deg) rotate(28deg);
+        }
+        &.stem2 {
+            top: -194em;
+            left: 136em;
+            width: 7em;
+            transform: rotate(10deg);
+        }
+        &.stem3 {
+            top: -205em;
+            left: 101em;
+            width: 8em;
+            transform: rotate(55deg);
+        }
+    }
     .grapeleafs {
         top: 200em;
         left: -90em;
